@@ -1,10 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-$END$
+<main>
+    <header>
+        <h1 id="title">Wealth Questionnaire - Questionnaire Form</h1>
+        <p id="description">Measure your Wealth level to help you succeed</p>
+    </header>
+    <div class="container">
+        <form id="survey-form">
+            <div class="form-item">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" placeholder="E.g. louis Young" value="" required>
+            </div>
+            <div class="form-item">
+                <label id="email-label" for="email">
+                    Email Address
+                    <span>*</span>
+                </label>
+                <input id="email" type="email" placeholder="E.g. louis@young.com" required>
+            </div>
+            <div class="form-item">
+                <label id="number-label" for="number">Age</label>
+                <input id="number" type="number" min="1" max="100" placeholder="E.g. 18">
+            </div>
+            <div class="form-item">
+                <label for="dropdown">What do you really want?</label>
+                <select id="dropdown">
+                    <option value="--">--</option>
+                    <option value="Earn Passive Income">Earn Passive Income</option>
+                    <option value="Invest in Real Estate">Invest in Real Estate</option>
+                    <option value="Become a Private Money Lender">Become a Private Money Lender</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="desiredIncome">What is your desired monthly income?</label>
+                <select id="desiredIncome">
+                    <option value="--">--</option>
+                    <option value="$10,000">$10,000</option>
+                    <option value="$20,000">$20,000</option>
+                    <option value="$50,000">$50,000</option>
+                    <option value="$100,000">$100,000</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="currentIncome">What is your current monthly income?</label>
+                <select id="currentIncome">
+                    <option value="--">--</option>
+                    <option value="Zero I am not working">Zero I am not working</option>
+                    <option value="Less than $5000">Less than $5000</option>
+                    <option value="More than $5000">More than $5000</option>
+                    <option value="More than $10,000">More than $10,000</option>
+                    <option value="More than $20,000">More than $20,000</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="netWorth">What is your net worth?</label>
+                <select id="netWorth">
+                    <option value="--">--</option>
+                    <option value="Zero I need to start building">Zero I need to start building</option>
+                    <option value="$1,000,000 to $3,000,000">$1,000,000 to $3,000,000</option>
+                    <option value="$4,000,000 to $6,000,000">$4,000,000 to $6,000,000</option>
+                    <option value="$10,000,000 or more">$10,000,000 or more</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label>What are your interests</label>
+                <div class="interests-checkbox">
+                    <label>
+                        <input type="checkbox" name="interests" value="Private Money Investing">
+                        <span>Private Money Investing</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="Passive Income - Rentals">
+                        <span>Passive Income - Rentals</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="More Income - Investing">
+                        <span>More Income - Investing</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interests" value="Paying Off Mortgages">
+                        <span>Paying Off Mortgages</span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-item">
+                <label>Do you have a written investment plan?</label>
+                <div class="plan-radio">
+                    <label>
+                        <input type="radio" name="plan" value="Yes">
+                        <span>Yes</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="plan" value="No">
+                        <span>No</span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="tellUs">What else would you like to tell us?</label>
+                <textarea id="tellUs" placeholder="Tell us something..." maxlength="180"></textarea>
+            </div>
+            <div class="form-item">
+                <button id="submit">Submit Questionnaire</button>
+            </div>
+        </form>
+    </div>
+</main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script>
+    const projectName = 'survey-form';
+</script>
 </body>
 </html>
