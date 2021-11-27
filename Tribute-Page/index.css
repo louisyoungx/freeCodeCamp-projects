@@ -19,6 +19,10 @@ body {
     margin: 0 2vmin;
 }
 
+#description {
+    text-indent: 4vmin;
+}
+
 .box {
     padding: 2vmin;
     border-radius: 1vmin;
@@ -36,6 +40,10 @@ body {
 #image {
     margin: 2vmin auto;
     max-width: 50vw;
+}
+
+#img-caption {
+    text-indent: 4vmin;
 }
 
 section {
