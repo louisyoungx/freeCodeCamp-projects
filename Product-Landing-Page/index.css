@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+}
+
+#nav-bar {
+    height: 2vh;
+    padding: 1.5vh 2vw;
+    background-color: #424245;
+    color: rgb(167, 167, 167);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+}
+
+#nav-bar li {
+    list-style-type: none;
+}
+
+#header-img {
+    width: 13px;
+}
+
+.nav-item {
+    font-size: 13px;
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+    cursor: pointer;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.nav-item:hover {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin-bottom: 10vh;
+}
+
+.banner figcaption {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+}
+
+#new {
+    color: #f56300;
+    border-color: #bf4800;
+}
+
+#title {
+    font-weight: 800;
+    font-size: 5vh;
+}
+
+#price {
+    font-weight: 400;
+}
+
+.blue-button {
+    background-color: #0071e3;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    min-width: 28px;
+    padding: 8px 16px;
+    border-radius: 980px;
+    border: none;
+    margin: 2vh 0;
+}
+
+.learn-more {
+    color: #06c;
+    text-decoration: none;
+}
+
+.banner img {
+    width: 80vw;
+}
+
+#which-mac {
+    font-size: 5vh;
+    font-weight: 800;
+}
+
+#model-pic {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-column-gap: 3vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.model-pic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+
+.split-line {
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.model-img-color-mba {
+    width: 6vw;
+}
+
+.model-img-color-mbp {
+    width: 4vw;
+}
+
+.model-img {
+    width: 80%;
+}
+
+.params {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    justify-items: center;
+    align-items: flex-start;
+    grid-column-gap: 3vw;
+    grid-template-areas:
+    "mba-chip mbp13-chip mbp14-chip"
+    "mba-cpu mbp13-cpu mbp14-cpu"
+    "mba-gpu mbp13-gpu mbp14-gpu"
+    "mba-memory mbp13-memory mbp14-memory"
+    "mba-storage mbp13-storage mbp14-storage"
+    "mba-display mbp13-display mbp14-display"
+    "mba-battery mbp13-battery mbp14-battery"
+    "mba-camera mbp13-camera mbp14-camera"
+    "mba-weight mbp13-weight mbp14-weight"
+    "mba-keyboard mbp13-keyboard mbp14-keyboard";
+}
+
+.mba-chip {grid-area: mba-chip;}
+.mbp13-chip {grid-area: mbp13-chip;}
+.mbp14-chip {grid-area: mbp14-chip;}
+.mba-cpu {grid-area: mba-cpu;}
+.mbp13-cpu {grid-area: mbp13-cpu;}
+.mbp14-cpu {grid-area: mbp14-cpu;}
+.mba-gpu {grid-area: mba-gpu;}
+.mbp13-gpu {grid-area: mbp13-gpu;}
+.mbp14-gpu {grid-area: mbp14-gpu;}
+.mba-memory {grid-area: mba-memory;}
+.mbp13-memory {grid-area: mbp13-memory;}
+.mbp14-memory {grid-area: mbp14-memory;}
+.mba-storage {grid-area: mba-storage;}
+.mbp13-storage {grid-area: mbp13-storage;}
+.mbp14-storage {grid-area: mbp14-storage;}
+.mba-display {grid-area: mba-display;}
+.mbp13-display {grid-area: mbp13-display;}
+.mbp14-display {grid-area: mbp14-display;}
+.mba-battery {grid-area: mba-battery;}
+.mbp13-battery {grid-area: mbp13-battery;}
+.mbp14-battery {grid-area: mbp14-battery;}
+.mba-camera {grid-area: mba-camera;}
+.mbp13-camera {grid-area: mbp13-camera;}
+.mbp14-camera {grid-area: mbp14-camera;}
+.mba-weight {grid-area: mba-weight;}
+.mbp13-weight {grid-area: mbp13-weight;}
+.mbp14-weight {grid-area: mbp14-weight;}
+.mba-keyboard {grid-area: mba-keyboard;}
+.mbp13-keyboard {grid-area: mbp13-keyboard;}
+.mbp14-keyboard {grid-area: mbp14-keyboard;}
+
+.cell {
+    width: 100%;
+    min-height: 13vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    align-items: center;
+}
+
+.cell img {
+    width: 5vw;
+}
+
+.cell p {
+    font-weight: 400;
+    font-size: 2vmin;
+    margin: 0;
+}
+
+.cell h4 {
+    font-size: 3vmin;
+    font-weight: 800;
+    margin: 0;
+}
+
+.gift {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#holiday {
+    width: 80vw;
+}
+
+#form {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#email {
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    width: 30vw;
+    height: 5vw;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    padding: .55882rem .94118rem 0;
+    -webkit-appearance: none;
+}
+
+.start {
+    background-color: #0071e3;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    min-width: 28px;
+    border-radius: 2vmin;
+    border: none;
+    padding: 1.5vmin 5vmin;
+    width: auto;
+}
+
+footer {
+    color: white;
+    background-image: url("./img/monterey.jpg");
+    background-size: 1380px 600px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-name {
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.footer-title {
+    font-size: 4.5vw;
+    font-weight: 400;
+    margin: 2.5vh;
+}
+
+.footer-link a {
+    color: white;
+    text-decoration: none;
+}
+
+#video {
+    margin-top: 5vh;
+    width: 35vw;
+    height: 25vw;
+}
+
+@media (min-height: 1000px) {
+    .model {
+        width: 60vw;
+    }
+    #model-pic {
+        grid-template-columns: 20vw 20vw 20vw;
+    }
+    .params {
+        width: 60vw;
+        grid-template-columns: 20vw 20vw 20vw;
+    }
+    .footer-link {
+        width: 20%;
+    }
+}
