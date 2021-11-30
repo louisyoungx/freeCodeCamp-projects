@@ -1,0 +1,79 @@
+.vars {
+    --heading-margin: 3px;
+    --code-color: rgb(31,41,55);
+    --quote-color: #dedede;
+}
+
+.mark-text {
+    font-size: 15px;
+    margin: 3px 0!important;
+}
+.mark-h1 {
+    font-size: 30px;
+    margin: var(--heading-margin, 3px);
+}
+.mark-h2 {
+    font-size: 25px;
+    margin: var(--heading-margin, 3px);
+}
+.mark-h3 {
+    font-size: 20px;
+    margin: var(--heading-margin, 3px);
+}
+.mark-h4 {
+    font-size: 15px;
+    margin: var(--heading-margin, 3px);
+}
+.mark-h5 {
+    font-size: 10px;
+    margin: var(--heading-margin, 3px);
+}
+.mark-h6 {
+    font-size: 5px;
+    margin: var(--heading-margin, 3px);
+}
+.mark-bold {
+    font-weight: 800;
+    font-size: 15px;
+}
+.mark-italic {
+
+}
+.mark-quote {
+    padding-left: 20px;
+    border-left: 10px solid var(--quote-color, #dedede);
+}
+.mark-ordered-list {
+
+}
+.mark-ordered-item {
+
+}
+.mark-unordered-list {
+
+}
+.mark-unordered-item {
+
+}
+.mark-code {
+    background-color: var(--code-color, rgb(31,41,55));
+    color: white;
+    border-radius: 3px;
+    padding: 5px 5px;
+}
+.mark-code-line {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 1px 0!important;
+    letter-spacing: 1px;
+}
+.mark-hr {
+    margin: 30px 0;
+    border: 1px solid var(--quote-color, #dedede);
+}
+.mark-link {
+
+}
+.mark-img {
+    width: 80%;
+}

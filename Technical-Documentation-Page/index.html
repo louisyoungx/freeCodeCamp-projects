@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technical Documentation Page - MarkDown</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mark.css">
+</head>
+<body>
+<div class="nav-bar">
+    <header class="nav-header flex-center">
+        <img alt="MarkDown" src="./img/markdown.svg">
+    </header>
+    <nav>
+        <div class="nav-link-container">
+            <a class="nav-link" href="#why-markdown">Why markdown?</a>
+        </div>
+        <div class="nav-link-container">
+            <a class="nav-link" href="#markdown-history">MarkDown History</a>
+        </div>
+        <div class="nav-link-container">
+            <a class="nav-link" href="#heading">Heading</a>
+        </div>
+        <div class="nav-link-container">
+            <a class="nav-link" href="#bold">Bold</a>
+        </div>
+        <div class="nav-link-container">
+            <a class="nav-link" href="#italic">Italic</a>
+        </div>
+        <div class="nav-link-container">
+            <a class="nav-link" href="#blockquote">Blockquote</a>
+        </div>
+        <div class="nav-link-container">
+            <a class="nav-link" href="#ordered-list">Ordered List</a>
+        </div>
+        <div class="nav-link-container">
+            <a class="nav-link" href="#unordered-list">Unordered List</a>
+        </div>
+        <div class="nav-link-container">
+            <a class="nav-link" href="#code">Code</a>
+        </div>
+        <div class="nav-link-container">
+            <a class="nav-link" href="#horizontal-rule">Horizontal Rule</a>
+        </div>
+        <div class="nav-link-container">
+            <a class="nav-link" href="#link">Link</a>
+        </div>
+        <div class="nav-link-container">
+            <a class="nav-link" href="#image">Image</a>
+        </div>
+    </nav>
+</div>
+
+<main id="main-doc">
+    <header class="header-bar flex-center">
+        <h1>MarkDown Basic Syntax</h1>
+    </header>
+    <article>
+        <section class="main-section" id="why-markdown">
+            <header class="mark-h2">Why markdown?</header>
+            <p class="mark-text">Markdown is a universal doc format that is easy to write and easy to add to a version
+                control system.</p>
+            <ul class="mark-unordered-list">
+                <li class="mark-unordered-item">Open - Anyone can submit content, fix typos & update anything via pull
+                    requests
+                </li>
+                <li class="mark-unordered-item">Version control - Roll back & see the history of any given post</li>
+                <li class="mark-unordered-item">No CMS lock in - We can easily port to any static site generator</li>
+                <li class="mark-unordered-item">It's just simple - No user accounts to manage, no CMS software to
+                    upgrade, no plugins to install.
+                </li>
+            </ul>
+        </section>
+        <hr class="mark-hr">
+        <section class="main-section" id="markdown-history">
+            <header class="mark-h2">MarkDown History</header>
+            <p class="mark-text">In 2002 Aaron Swartz created atx, "the true structured text format". Swartz and John
+                Gruber then worked
+                together to create the Markdown language in 2004, with the goal of enabling people "to write using an
+                easy-to-read and easy-to-write plain text format, optionally convert it to structurally valid XHTML (or
+                HTML)".</p><br>
+            <p class="mark-text">Its key design goal is readability – that the language be readable as-is, without
+                looking like it has been
+                marked up with tags or formatting instructions, unlike text formatted with a markup language, such as
+                Rich
+                Text Format (RTF) or HTML, which have obvious tags and formatting instructions. To this end, its main
+                inspiration is the existing conventions for marking up plain text in email, though it also draws from
+                earlier markup languages, notably setext, Textile, and reStructuredText.</p><br>
+            <p class="mark-text">Gruber wrote a Perl script, Markdown.pl, which converts marked-up text input to valid,
+                well-formed XHTML or
+                HTML and replaces angle brackets '<' '>' and ampersands '&' with their corresponding character entity
+                references. It can take the role of a standalone script, a plugin for Blosxom or a Movable Type, or of a
+                text filter for BBEdit.</p><br>
+        </section>
+        <hr class="mark-hr">
+        <section class="main-section" id="heading">
+            <header class="mark-h2">Heading</header>
+            <h3 class="mark-h3">Use <strong class="mark-bold">#</strong> to markup 1-6 level heading</h3>
+            <h4 class="mark-h4">Element:</h4>
+            <div class="mark-quote">
+                <div class="mark-code">
+                    <p class="mark-code-line"># One Level Heading</p>
+                    <p class="mark-code-line">## Two Level Heading</p>
+                    <p class="mark-code-line">### Three Level Heading</p>
+                    <p class="mark-code-line">#### Four Level Heading</p>
+                    <p class="mark-code-line">##### Five Level Heading</p>
+                    <p class="mark-code-line">###### Six Level Heading</p>
+                </div>
+            </div>
+            <h4 class="mark-h4">Markdown Syntax:</h4>
+            <div class="mark-quote">
+                <h1 class="mark-h1">One Level Heading</h1>
+                <h2 class="mark-h2">Two Level Heading</h2>
+                <h3 class="mark-h3">Thr Level Heading</h3>
+                <h4 class="mark-h4">Four Level Heading</h4>
+                <h5 class="mark-h5">Five Level Heading</h5>
+                <h6 class="mark-h6">Six Level Heading</h6>
+            </div>
+        </section>
+        <hr class="mark-hr">
+        <section class="main-section" id="bold">
+            <header class="mark-h2">Bold</header>
+            <h3 class="mark-h3">Use <strong class="mark-bold">**</strong> to markup Bold</h3>
+            <h4 class="mark-h4">Element:</h4>
+            <div class="mark-quote">
+                <div class="mark-code">
+                    <p class="mark-code-line">**Bold Text**</p></div>
+            </div>
+            <h4 class="mark-h4">Markdown Syntax:</h4>
+            <div class="mark-quote">
+                <strong class="mark-bold">Bold Text</strong>
+            </div>
+        </section>
+        <hr class="mark-hr">
+        <section class="main-section" id="italic">
+            <header class="mark-h2">Italic</header>
+            <h3 class="mark-h3">Use <strong class="mark-bold">*</strong> to markup Italic</h3>
+            <h4 class="mark-h4">Element:</h4>
+            <div class="mark-quote">
+                <div class="mark-code">
+                    <p class="mark-code-line">**Italic Text**</p></div>
+            </div>
+            <h4 class="mark-h4">Markdown Syntax:</h4>
+            <div class="mark-quote">
+                <i class="mark-italic">Italic Text</i>
+            </div>
+        </section>
+        <hr class="mark-hr">
+        <section class="main-section" id="blockquote">
+            <header class="mark-h2">Blockquote</header>
+            <h3 class="mark-h3">Use <strong class="mark-bold">></strong> to markup Blockquote</h3>
+            <h4 class="mark-h4">Element:</h4>
+            <div class="mark-quote">
+                <div class="mark-code">
+                    <p class="mark-code-line">> Blockquote</p>
+                    <p class="mark-code-line">>> Nested Blockquote</p></div>
+            </div>
+            <h4 class="mark-h4">Markdown Syntax:</h4>
+            <div class="mark-quote">
+                    <p class="mark-text">Blockquote</p>
+                    <div class="mark-quote">
+                        <p class="mark-text">Nested Blockquote</p>
+                    </div>
+            </div>
+        </section>
+        <hr class="mark-hr">
+        <section class="main-section" id="ordered-list">
+            <header class="mark-h2">Ordered List</header>
+            <h3 class="mark-h3">Use <strong class="mark-bold">1.One 2.Two</strong> to markup Ordered List</h3>
+            <h4 class="mark-h4">Element:</h4>
+            <div class="mark-quote">
+                <div class="mark-code">
+                    <p class="mark-code-line">1. First item</p>
+                    <p class="mark-code-line">2. Second item</p>
+                    <p class="mark-code-line">3. Third item</p></div>
+            </div>
+            <h4 class="mark-h4">Markdown Syntax:</h4>
+            <div class="mark-quote">
+                <ol class="mark-ordered-list">
+                    <li class="mark-ordered-item">First item</li>
+                    <li class="mark-ordered-item">Second item</li>
+                    <li class="mark-ordered-item">Third item</li>
+                </ol>
+            </div>
+        </section>
+        <hr class="mark-hr">
+        <section class="main-section" id="unordered-list">
+            <header class="mark-h2">Unordered List</header>
+            <h3 class="mark-h3">Use <strong class="mark-bold">-</strong> to markup Unordered List</h3>
+            <h4 class="mark-h4">Element:</h4>
+            <div class="mark-quote">
+                <div class="mark-code">
+                    <p class="mark-code-line">- First item</p>
+                    <p class="mark-code-line">- Second item</p>
+                    <p class="mark-code-line">- Third item</p>
+                </div>
+            </div>
+            <h4 class="mark-h4">Markdown Syntax:</h4>
+            <div class="mark-quote">
+                <ul class="mark-unordered-list">
+                    <li class="mark-unordered-item">First item</li>
+                    <li class="mark-unordered-item">Second item</li>
+                    <li class="mark-unordered-item">Third item</li>
+                </ul>
+            </div>
+        </section>
+        <hr class="mark-hr">
+        <section class="main-section" id="code">
+            <header class="mark-h2">Code</header>
+            <h3 class="mark-h3">Use <strong class="mark-bold">```</strong> to markup Code</h3>
+            <h4 class="mark-h4">Element:</h4>
+            <div class="mark-quote">
+                <div class="mark-code">
+                    <p class="mark-code-line">```shell</p>
+                    <p class="mark-code-line">git clone https://github.com/louisyoungx/freeCodeCamp-projects.git</p>
+                    <p class="mark-code-line">```</p>
+                </div>
+            </div>
+            <h4 class="mark-h4">Markdown Syntax:</h4>
+            <div class="mark-quote">
+                <div class="mark-code">
+                    <p class="mark-code-line">git clone https://github.com/louisyoungx/freeCodeCamp-projects.git</p>
+                </div>
+            </div>
+        </section>
+        <hr class="mark-hr">
+        <section class="main-section" id="horizontal-rule">
+            <header class="mark-h2">Horizontal Rule</header>
+            <h3 class="mark-h3">Use <strong class="mark-bold">---</strong> to markup Horizontal Rule</h3>
+            <h4 class="mark-h4">Element:</h4>
+            <div class="mark-quote">
+                <div class="mark-code">
+                    <p class="mark-code-line">---</p></div>
+            </div>
+            <h4 class="mark-h4">Markdown Syntax:</h4>
+            <div class="mark-quote">
+                <hr class="mark-hr">
+            </div>
+        </section>
+        <hr class="mark-hr">
+        <section class="main-section" id="link">
+            <header class="mark-h2">Link</header>
+            <h3 class="mark-h3">Use <strong class="mark-bold">[title](https://www.example.com)</strong> to markup Link
+            </h3>
+            <h4 class="mark-h4">Element:</h4>
+            <div class="mark-quote">
+                <div class="mark-code">
+                    <p class="mark-code-line">[title](https://www.example.com)</p></div>
+            </div>
+            <h4 class="mark-h4">Markdown Syntax:</h4>
+            <div class="mark-quote">
+                <a class="mark-link" href="https://www.example.com">title</a>
+            </div>
+        </section>
+        <hr class="mark-hr">
+        <section class="main-section" id="image">
+            <header class="mark-h2">Image</header>
+            <h3 class="mark-h3">Use <strong class="mark-bold">![MarkDown](./img/markdown.png)</strong> to markup Image
+            </h3>
+            <h4 class="mark-h4">Element:</h4>
+            <div class="mark-quote">
+                <div class="mark-code">
+                    <p class="mark-code-line">![MarkDown](./img/markdown.png)</p></div>
+            </div>
+            <h4 class="mark-h4">Markdown Syntax:</h4>
+            <div class="mark-quote">
+                <img class="mark-img" alt="MarkDown" src="./img/markdown.png">
+            </div>
+        </section>
+        <hr class="mark-hr">
+    </article>
+</main>
+</body>
+</html>
