@@ -2,7 +2,7 @@
     --left-color: rgb(25, 40, 58);
     --right-color: rgb(78, 106, 135);
     --background: white;
-    --nav-background: var(--background);
+    --nav-background: var(--background, white);
 }
 
 body {
@@ -12,8 +12,8 @@ body {
     flex-wrap: nowrap;
     justify-content: space-between;
     height:  calc(100vh);;
-    color: var(--left-color);
-    background-color: var(--background);
+    color: var(--left-color, rgb(25, 40, 58));
+    background-color: var(--background, white, white);
 }
 
 .flex-center {
@@ -24,8 +24,8 @@ body {
 
 .nav-header {
     height: 10vh;
-    background: linear-gradient(90deg, var(--left-color), var(--right-color));
-    color: var(--left-color);
+    background: linear-gradient(90deg, var(--left-color, rgb(25, 40, 58)), var(--right-color, rgb(78, 106, 135)));
+    color: var(--left-color, rgb(25, 40, 58));
     border-bottom-right-radius: 3vh;
 }
 
@@ -33,7 +33,7 @@ body {
     height: 80%;
 }
 
-nav {
+.nav-items {
     height: auto;
     width: 25vw;
     max-width: 200px;
@@ -45,23 +45,47 @@ nav {
 
 .nav-link-container {
     margin: 2vmin 0;
-    background-color: var(--background);
+    background-color: var(--background, white);
 }
 
-nav a {
-    color: var(--right-color);
+.nav-items a {
+    color: var(--right-color, rgb(78, 106, 135));
     text-decoration: none;
 }
 
 .header-bar {
     height: 10vh;
-    color: var(--right-color);
+    color: var(--right-color, rgb(78, 106, 135));
 }
 
 main {
     width: 70vw;
     margin: 0 5vw;
     overflow: auto;
-    color: var(--left-color);
+    color: var(--left-color, rgb(25, 40, 58));
 }
 
+.none {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    nav {
+        position: fixed;
+        background-color: var(--background, white);
+        z-index: 999;
+        transition-delay: 0.1s;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        transform: translateX(-25vw);
+    }
+    nav:hover {
+        transform: translateX(0);
+    }
+    .nav-items {
+        background-color: var(--background, white);
+    }
+    main {
+        width: 90vw;
+    }
+}

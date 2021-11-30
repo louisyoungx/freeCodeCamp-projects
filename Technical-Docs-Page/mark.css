@@ -60,12 +60,16 @@
     color: white;
     border-radius: 3px;
     padding: 5px 5px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 .mark-code-line {
     font-size: 14px;
     font-weight: 300;
     margin: 1px 0!important;
     letter-spacing: 1px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 .mark-hr {
     margin: 30px 0;

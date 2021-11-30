@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Technical Documentation Page - MarkDown</title>
@@ -7,57 +7,60 @@
     <link rel="stylesheet" href="mark.css">
 </head>
 <body>
-<div class="nav-bar">
+<nav id="navbar">
     <header class="nav-header flex-center">
         <img alt="MarkDown" src="./img/markdown.svg">
     </header>
-    <nav>
+    <div class="nav-items">
         <div class="nav-link-container">
-            <a class="nav-link" href="#why-markdown">Why markdown?</a>
+            <a class="nav-link" href="#Why_MarkDown?">Why MarkDown?</a>
         </div>
         <div class="nav-link-container">
-            <a class="nav-link" href="#markdown-history">MarkDown History</a>
+            <a class="nav-link" href="#MarkDown_History">MarkDown History</a>
         </div>
         <div class="nav-link-container">
-            <a class="nav-link" href="#heading">Heading</a>
+            <a class="nav-link" href="#Heading">Heading</a>
         </div>
         <div class="nav-link-container">
-            <a class="nav-link" href="#bold">Bold</a>
+            <a class="nav-link" href="#Bold">Bold</a>
         </div>
         <div class="nav-link-container">
-            <a class="nav-link" href="#italic">Italic</a>
+            <a class="nav-link" href="#Italic">Italic</a>
         </div>
         <div class="nav-link-container">
-            <a class="nav-link" href="#blockquote">Blockquote</a>
+            <a class="nav-link" href="#Blockquote">Blockquote</a>
         </div>
         <div class="nav-link-container">
-            <a class="nav-link" href="#ordered-list">Ordered List</a>
+            <a class="nav-link" href="#Ordered_List">Ordered List</a>
         </div>
         <div class="nav-link-container">
-            <a class="nav-link" href="#unordered-list">Unordered List</a>
+            <a class="nav-link" href="#Unordered_List">Unordered List</a>
         </div>
         <div class="nav-link-container">
-            <a class="nav-link" href="#code">Code</a>
+            <a class="nav-link" href="#Code">Code</a>
         </div>
         <div class="nav-link-container">
-            <a class="nav-link" href="#horizontal-rule">Horizontal Rule</a>
+            <a class="nav-link" href="#Horizontal_Rule">Horizontal Rule</a>
         </div>
         <div class="nav-link-container">
-            <a class="nav-link" href="#link">Link</a>
+            <a class="nav-link" href="#Link">Link</a>
         </div>
         <div class="nav-link-container">
-            <a class="nav-link" href="#image">Image</a>
+            <a class="nav-link" href="#Image">Image</a>
         </div>
-    </nav>
-</div>
+        <div class="nav-link-container none">
+            <a class="nav-link" href="#None">None</a>
+        </div>
+    </div>
+</nav>
 
 <main id="main-doc">
     <header class="header-bar flex-center">
         <h1>MarkDown Basic Syntax</h1>
     </header>
     <article>
-        <section class="main-section" id="why-markdown">
-            <header class="mark-h2">Why markdown?</header>
+        <section class="main-section" id="Why_MarkDown?">
+            <header class="mark-h2">Why MarkDown?</header>
             <p class="mark-text">Markdown is a universal doc format that is easy to write and easy to add to a version
                 control system.</p>
             <ul class="mark-unordered-list">
@@ -72,7 +75,7 @@
             </ul>
         </section>
         <hr class="mark-hr">
-        <section class="main-section" id="markdown-history">
+        <section class="main-section" id="MarkDown_History">
             <header class="mark-h2">MarkDown History</header>
             <p class="mark-text">In 2002 Aaron Swartz created atx, "the true structured text format". Swartz and John
                 Gruber then worked
@@ -93,7 +96,7 @@
                 text filter for BBEdit.</p><br>
         </section>
         <hr class="mark-hr">
-        <section class="main-section" id="heading">
+        <section class="main-section" id="Heading">
             <header class="mark-h2">Heading</header>
             <h3 class="mark-h3">Use <strong class="mark-bold">#</strong> to markup 1-6 level heading</h3>
             <h4 class="mark-h4">Element:</h4>
@@ -118,7 +121,7 @@
             </div>
         </section>
         <hr class="mark-hr">
-        <section class="main-section" id="bold">
+        <section class="main-section" id="Bold">
             <header class="mark-h2">Bold</header>
             <h3 class="mark-h3">Use <strong class="mark-bold">**</strong> to markup Bold</h3>
             <h4 class="mark-h4">Element:</h4>
@@ -132,7 +135,7 @@
             </div>
         </section>
         <hr class="mark-hr">
-        <section class="main-section" id="italic">
+        <section class="main-section" id="Italic">
             <header class="mark-h2">Italic</header>
             <h3 class="mark-h3">Use <strong class="mark-bold">*</strong> to markup Italic</h3>
             <h4 class="mark-h4">Element:</h4>
@@ -146,7 +149,7 @@
             </div>
         </section>
         <hr class="mark-hr">
-        <section class="main-section" id="blockquote">
+        <section class="main-section" id="Blockquote">
             <header class="mark-h2">Blockquote</header>
             <h3 class="mark-h3">Use <strong class="mark-bold">></strong> to markup Blockquote</h3>
             <h4 class="mark-h4">Element:</h4>
@@ -164,7 +167,7 @@
             </div>
         </section>
         <hr class="mark-hr">
-        <section class="main-section" id="ordered-list">
+        <section class="main-section" id="Ordered_List">
             <header class="mark-h2">Ordered List</header>
             <h3 class="mark-h3">Use <strong class="mark-bold">1.One 2.Two</strong> to markup Ordered List</h3>
             <h4 class="mark-h4">Element:</h4>
@@ -184,7 +187,7 @@
             </div>
         </section>
         <hr class="mark-hr">
-        <section class="main-section" id="unordered-list">
+        <section class="main-section" id="Unordered_List">
             <header class="mark-h2">Unordered List</header>
             <h3 class="mark-h3">Use <strong class="mark-bold">-</strong> to markup Unordered List</h3>
             <h4 class="mark-h4">Element:</h4>
@@ -205,7 +208,7 @@
             </div>
         </section>
         <hr class="mark-hr">
-        <section class="main-section" id="code">
+        <section class="main-section" id="Code">
             <header class="mark-h2">Code</header>
             <h3 class="mark-h3">Use <strong class="mark-bold">```</strong> to markup Code</h3>
             <h4 class="mark-h4">Element:</h4>
@@ -224,7 +227,7 @@
             </div>
         </section>
         <hr class="mark-hr">
-        <section class="main-section" id="horizontal-rule">
+        <section class="main-section" id="Horizontal_Rule">
             <header class="mark-h2">Horizontal Rule</header>
             <h3 class="mark-h3">Use <strong class="mark-bold">---</strong> to markup Horizontal Rule</h3>
             <h4 class="mark-h4">Element:</h4>
@@ -238,7 +241,7 @@
             </div>
         </section>
         <hr class="mark-hr">
-        <section class="main-section" id="link">
+        <section class="main-section" id="Link">
             <header class="mark-h2">Link</header>
             <h3 class="mark-h3">Use <strong class="mark-bold">[title](https://www.example.com)</strong> to markup Link
             </h3>
@@ -253,7 +256,7 @@
             </div>
         </section>
         <hr class="mark-hr">
-        <section class="main-section" id="image">
+        <section class="main-section" id="Image">
             <header class="mark-h2">Image</header>
             <h3 class="mark-h3">Use <strong class="mark-bold">![MarkDown](./img/markdown.png)</strong> to markup Image
             </h3>
@@ -268,6 +271,15 @@
             </div>
         </section>
         <hr class="mark-hr">
+        <section class="main-section none" id="None">
+            <header>None</header>
+            <code class="mark-code-line"># One Level Heading</code>
+            <code class="mark-code-line">## Two Level Heading</code>
+            <code class="mark-code-line">### Three Level Heading</code>
+            <code class="mark-code-line">#### Four Level Heading</code>
+            <code class="mark-code-line">##### Five Level Heading</code>
+            <code class="mark-code-line">###### Six Level Heading</code>
+        </section>
     </article>
 </main>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
