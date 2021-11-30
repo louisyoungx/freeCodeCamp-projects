@@ -53,6 +53,10 @@ section {
     margin-bottom: 10vh;
 }
 
+.banner {
+    margin-top: 10vh;
+}
+
 .banner figcaption {
     height: 35vh;
     display: flex;
