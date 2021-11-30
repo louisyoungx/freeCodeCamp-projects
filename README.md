@@ -20,18 +20,18 @@
 
 ## Info
 1. <span id="tribute-page">Tribute Page</span>
-> CodePen Page - https://codepen.io/louisyoung-ea/full/bGrXPmd
+> CodePen Page - https://codepen.io/louisyoungx/pen/bGrXPmd
 
 ![Tribute Page](./docs/tribute-page.png)
 
 
 2. <span id="survey-form">Survey Form</span>
-> CodePen Page - https://codepen.io/louisyoung-ea/full/bGobbKm
+> CodePen Page - https://codepen.io/louisyoungx/pen/bGobbKm
 
 ![Tribute Page](./docs/survey-form.png)
 
 2. <span id="product-landing-page">Product Landing Page</span>
 
-> CodePen Page - https://codepen.io/louisyoung-ea/full/JjrjBBJ
+> CodePen Page - https://codepen.io/louisyoungx/pen/JjrjBBJ
 
 ![Tribute Page](./docs/product-landing-page.png)
