@@ -14,9 +14,9 @@
 
 
 ##  List
-- [Tribute Page](#tribute-page)
-- [Survey Form](#survey-form)
-- [Product Landing Page](#product-landing-page)
+- [Tribute Page - **Erwin Schrödinger**](#tribute-page)
+- [Survey Form - **Wealth Questionnaire**](#survey-form)
+- [Product Landing Page - **MacBook**](#product-landing-page)
 
 ## Info
 1. <span id="tribute-page">Tribute Page</span>
