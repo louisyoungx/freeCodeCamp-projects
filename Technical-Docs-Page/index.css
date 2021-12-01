@@ -44,13 +44,26 @@ body {
 }
 
 .nav-link-container {
-    margin: 2vmin 0;
+    margin: 1vmin 0;
+    padding: 1vmin 0;
+    border-radius: 1vmin;
     background-color: var(--background, white);
+    transition-timing-function: ease-in;
+    transition-duration: 0.2s;
+}
+
+.nav-link-container:hover {
+    background-color: #e0e0e0;
 }
 
 .nav-items a {
     color: var(--right-color, rgb(78, 106, 135));
     text-decoration: none;
+}
+
+.nav-link {
+    width: 25%;
+    height: 100%;
 }
 
 .header-bar {
