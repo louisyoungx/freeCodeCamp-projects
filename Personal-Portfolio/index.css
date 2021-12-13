@@ -1,0 +1,251 @@
+@font-face {
+    font-family: MonoLisa-Bold;
+    src: url("./font/MonoLisa-Bold.woff2");
+}
+
+@font-face {
+    font-family: MonoLisa-Regular;
+    src: url("./font/MonoLisa-Regular.woff2");
+}
+
+html {
+    background-color: #111;
+    color: #b1b1b1;
+    font-family: MonoLisa-Regular, serif;
+    font-size: 2.5vh;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+div, article {
+    width: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #eaeaea;
+    font-family: MonoLisa-Bold, serif;
+}
+
+a {
+    color: #b1b1b1;
+    text-decoration: none;
+}
+
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    margin: 0;
+    background-color: rgba(17, 17, 17, 0.94);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #242424;
+}
+
+#logo {
+    height: 3.14vh;
+    width: 8.57vh;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 2.28vh 0 0;
+    padding: 0;
+    z-index: 10000;
+}
+
+.nav-item {
+    font-family: MonoLisa-Bold, serif;
+    margin-right: 0.28vh;
+    padding: 0 4vw;
+    list-style-type: none;
+    min-height: 5.14vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.57vh;
+    cursor: pointer;
+    font-weight: bold;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+
+.nav-item:hover {
+    background-color: #2e2e2e;
+    color: #f6f6f6;
+}
+
+.nav-focus {
+    background-color: #2e2e2e;
+    color: #f6f6f6;
+}
+
+main {
+    padding: 0 6vw;
+}
+
+#title {
+    font-size: 8vmin;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects-list {
+    width: 88vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project {
+    width: 26vw;
+    margin: 1vw;
+    background-color: #191919;
+    border-color: #242424;
+    cursor: pointer;
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+}
+
+.project:hover {
+    background-color: #1e1e1e;
+    border-color: #242424;
+    transform: translateY(-1vh);
+}
+
+.project figure {
+    margin: 2vw;
+}
+
+.project-img-container {
+    width: 22vw;
+    height: 16.5vw;
+    margin: 0;
+    overflow: hidden;
+}
+
+.project-img {
+    width: 100%;
+}
+
+hr {
+    height: 6px;
+    background-image: url("./img/divider.svg");
+    background-repeat: repeat-x;
+    background-position: left center;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    opacity: 0.6;
+}
+
+.hr-top {
+    margin-top: 11.42vh;
+}
+
+.hr-bottom {
+    margin-bottom: 11.42vh;
+}
+
+#contact {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h2 {
+    font-size: 6vmin;
+}
+
+#contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-link {
+    margin: 5vmin 2vmin;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+}
+
+.contact-link:hover {
+    transform: translateY(1vh);
+}
+
+.contact-icon {
+    width: 6vmin;
+    color: #d9d9d9;
+}
+
+.contact-email {
+    margin-left: 10vmin;
+    height: 3vmin;
+    font-size: 2.4vmin;
+    background-color: #242424;
+    border-color: #363636;
+    padding: 2vmin;
+    border-radius: 3.5vmin;
+    color: #d9d9d9;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+}
+
+.contact-email:hover {
+    background-color: #2e2e2e;
+    border-color: #363636;
+    transform: translateY(1vh);
+}
+
+footer {
+    padding: 0 6vw 11.42vh 6vw;
+}
+
+@media screen and (max-width: 420px) {
+    #navbar {
+        font-size: 2vh;
+    }
+    .project {
+        width: 100%;
+        margin: 4vmin 0;
+    }
+    .project-img-container {
+         width: 100%;
+         height: auto;
+         margin: 0;
+         overflow: hidden;
+     }
+}
+
