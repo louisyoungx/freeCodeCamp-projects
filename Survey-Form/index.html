@@ -115,6 +115,21 @@
 <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
 <script>
     const projectName = 'survey-form';
+    const env = 'LOCAL'    // LOCAL | CLOUD
+    const dirName = 'Survey-Form'
+    const cloudPath = 'https://raw.githubusercontent.com/louisyoungx/freeCodeCamp-projects/master/' + dirName + '/img/';
+    (function cloudPics() {
+        function chore() {
+            document.querySelectorAll('img').forEach(img => {
+                console.log(img.getAttribute('src'))
+                let src = img.getAttribute('src').replace('./img/', cloudPath)
+                img.setAttribute('src', src)
+            });
+        }
+        if (env === 'CLOUD') {
+            chore()
+        }
+    })()
 </script>
 </body>
 </html>

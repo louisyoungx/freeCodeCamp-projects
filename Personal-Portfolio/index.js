@@ -1,5 +1,20 @@
-let env = 'CLOUD'    // LOCAL | CLOUD
 const projectName = 'portfolio';
+const env = 'LOCAL'    // LOCAL | CLOUD
+const dirName = 'Personal-Portfolio'
+const cloudPath = 'https://raw.githubusercontent.com/louisyoungx/freeCodeCamp-projects/master/' + dirName + '/img/';
+(function cloudPics() {
+    function chore() {
+        document.querySelectorAll('img').forEach(img => {
+            console.log(img.getAttribute('src'))
+            let src = img.getAttribute('src').replace('./img/', cloudPath)
+            img.setAttribute('src', src)
+        });
+    }
+    if (env === 'CLOUD') {
+        chore()
+    }
+})()
+
 let projects = [
     {
         title: 'Tribute Page',
@@ -33,23 +48,25 @@ let projects = [
     },
 ]
 
-let imgPath
-if (env === 'LOCAL') {
-    imgPath = '../docs/'
-} else {
-    imgPath = 'https://raw.githubusercontent.com/louisyoungx/freecodecamp-projects/master/docs/'
+function replaceProjectImg(projects) {
+    let imgPath
+    if (env === 'LOCAL') {
+        imgPath = '../docs/'
+    } else {
+        imgPath = 'https://raw.githubusercontent.com/louisyoungx/freecodecamp-projects/master/docs/'
+    }
+    for (let project of projects) {
+        project.img = imgPath + project.img
+    }
+    return projects
 }
 
-for (let project of projects) {
-    project.img = imgPath + project.img
-}
 
-let projectList = document.getElementById("projects-list")
-
-let domText = ''
-
-for (let project of projects) {
-    domText += `
+function render(projects) {
+    let projectList = document.getElementById("projects-list")
+    let domText = ''
+    for (let project of projects) {
+        domText += `
 <a class="project" href="${project.href}">
     <figure>
         <div class="project-img-container">
@@ -62,11 +79,17 @@ for (let project of projects) {
     </figure>
 </a>
 `
+    }
+    projectList.innerHTML = domText
 }
 
-projectList.innerHTML = domText
 
 function goto(href) {
     window.location.href = href
 }
+
+(function main() {
+    projects = replaceProjectImg(projects)
+    render(projects)
+})()
 
