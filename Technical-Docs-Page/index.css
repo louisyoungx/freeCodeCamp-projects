@@ -71,7 +71,7 @@ body {
 .nav-link {
     height: 100%;
     width: 100%;
-    padding: 2vmin 0 ;
+    padding: 1.5vmin 0 ;
 }
 
 .header-bar {
@@ -113,7 +113,6 @@ main {
 
     .nav-link {
         font-size: 4vmin;
-        padding: 1.5vmin 0 ;
     }
 
     .nav-back {
