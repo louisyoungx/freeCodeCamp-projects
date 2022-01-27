@@ -19,6 +19,7 @@
 - [Product Landing Page - **MacBook**](#product-landing-page)
 - [Technical Docs Page - **MarkDown**](#technical-docs-page)
 - [Personal Portfolio - **Louis Young**](#personal-portfolio)
+- [Random Quote - **Louis Young**](#random-quote)
 
 ## Info
 1. <span id="tribute-page">Tribute Page</span>
@@ -44,8 +45,14 @@
 
 ![MarkDown](./docs/technical-docs-page.png)
 
-4. <span id="personal-portfolio">Personal Portfolio</span>
+5. <span id="personal-portfolio">Personal Portfolio</span>
 
 > CodePen Page - https://codepen.io/louisyoungx/pen/mdBRJqW
 
 ![Louis Young](./docs/personal-portfolio.png)
+
+6. <span id="random-quote">Random Quote</span>
+
+> CodePen Page - https://codepen.io/louisyoungx/pen/mdBRJqW
+
+![Louis Young](./docs/random-quote.png)
