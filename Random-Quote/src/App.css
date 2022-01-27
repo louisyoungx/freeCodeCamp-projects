@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'lixukexingshu';
+  src: url('./lixukexingshu.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  height: 100vh;
+  width: 100vw;
+  transition: 2s;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-image: url('./texture.png');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#quote-box {
+  color: black;
+  height: 40vh;
+  width: 35vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: white;
+  border-radius: 1vh;
+  padding: 0 5vw;
 }
 
-.App-link {
-  color: #61dafb;
+#text {
+  font-family: lixukexingshu;
+  font-size: 5vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#author {
+  width: 100%;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-family: lixukexingshu;
+  font-size: 3vh;
+  opacity: .8;
+  margin: 2vh 0;
+}
+
+#title {
+  height: 80vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 18vh;
+  font-family: lixukexingshu;
+  writing-mode: vertical-rl;
+  opacity: .8;
+}
+
+.buttons {
+  flex-grow: 0;
+  height: 5vh;
+  width: 100%;
+  transform: translateY(2vh);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#tweet-quote {
+  text-decoration: none;
+  width: 5em;
+  height: 2.5em;
+  border-radius: .3vh;
+  border: none;
+  font-family: lixukexingshu;
+  font-size: 3vh;
+  opacity: .9;
+  transition: .3s;
+  cursor: pointer;
+  margin: 1em 0;
+}
+
+#new-quote {
+  width: 5em;
+  height: 2.5em;
+  border-radius: .3vh;
+  color: #fff;
+  border: none;
+  font-family: lixukexingshu;
+  font-size: 3vh;
+  opacity: .9;
+  transition: .3s;
+  cursor: pointer;
+}
+
+#new-quote:hover {
+  opacity: .8;
+}
+
+
+@media screen and (max-width: 420px) {
+  #title {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  #quote-box {
+    width: 80vw;
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './reset.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -15,3 +16,21 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+// const projectName = 'random-quote-machine';
+const env = 'LOCAL'    // LOCAL | CLOUD
+const dirName = 'Random-Quote'
+const cloudPath = 'https://raw.githubusercontent.com/louisyoungx/freeCodeCamp-projects/master/' + dirName + '/img/';
+// window.projectName = projectName
+(function cloudPics() {
+    function chore() {
+        document.querySelectorAll('img').forEach(img => {
+            console.log(img.getAttribute('src'))
+            let src = img.getAttribute('src').replace('./img/', cloudPath)
+            img.setAttribute('src', src)
+        });
+    }
+    if (env === 'CLOUD') {
+        chore()
+    }
+})()
