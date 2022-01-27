@@ -53,6 +53,6 @@
 
 6. <span id="random-quote">Random Quote</span>
 
-> CodePen Page - https://codepen.io/louisyoungx/pen/mdBRJqW
+> CodePen Page - https://codepen.io/louisyoungx/pen/wvPBYON
 
 ![Louis Young](./docs/random-quote.png)

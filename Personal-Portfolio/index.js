@@ -46,6 +46,12 @@ let projects = [
         img: 'personal-portfolio.png',
         href: 'https://codepen.io/louisyoungx/full/mdBRJqW'
     },
+    {
+        title: 'Random Quote',
+        name: 'Louis Young',
+        img: 'random-quote.png',
+        href: 'https://codepen.io/louisyoungx/full/wvPBYON'
+    },
 ]
 
 function replaceProjectImg(projects) {
