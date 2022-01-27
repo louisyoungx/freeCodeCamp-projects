@@ -61,13 +61,21 @@ a {
     width: 8.57vh;
 }
 
+nav {
+    z-index: 10000;
+}
+
 .nav-list {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 0 2.28vh 0 0;
     padding: 0;
-    z-index: 10000;
+}
+
+.nav-list li {
+    list-style-type: none;
+    user-select: none;
 }
 
 .nav-item {
