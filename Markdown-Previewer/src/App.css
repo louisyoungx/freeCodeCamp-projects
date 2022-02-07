@@ -1,0 +1,93 @@
+:root {
+  --bg-color: #fff;
+  --bg-color-secondary: #f6f6f6;
+  --bg-color-teritary: #fafafa;
+  --bg-color-transparent: hsla(0, 0%, 100%, 0.9);
+  --box-shadow: 0 1px 8px 0 rgba(27, 35, 47, 0.1);
+  --box-shadow-hover: 0 2px 16px 0 rgba(27, 35, 47, 0.2);
+  --text-color: rgba(0, 0, 0, 0.9);
+  --text-color-sub: #7f7f7f;
+  --border-color: #eaeaea;
+  --border-color-sub: #dadada;
+  --code-color: rgba(27, 31, 35, 0.05);
+  --inline-code-text: #c52940;
+  --inline-code-bg: #f9f2f4;
+  --mask-color: #888;
+  --accent-color: #377bb5;
+  --horizon-color: #87aed1;
+  --image-mask-color: transparent;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+
+.app-header {
+  height: 7vh;
+  width: 100vw;
+  font-weight: 700;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-header a {
+  text-decoration: none;
+  color: var(--accent-color);
+  margin-right: 0.5vw;
+}
+
+.horizon {
+  width: 98vw;
+  border: 0.5px solid;
+  background: var(--horizon-color);
+  color: var(--horizon-color);
+  box-shadow:
+  0 0 0.1vh var(--horizon-color),
+  0 0 0.5vh var(--horizon-color),
+  0 0 1vh var(--horizon-color),
+  0 0 5vh var(--horizon-color);
+}
+
+.app-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.editor {
+  width: 50vw;
+  height: 90vh;
+}
+
+.preview {
+  width: 50vw;
+  height: 90vh;
+  border-left: 1vw solid var(bg-color-secondary);
+  background-color: var(--bg-color);
+  overflow: auto;
+}
+
+@media screen and (max-width: 820px) {
+  .app-header {
+    height: 6vh;
+  }
+  .horizon {
+    display: none;
+  }
+  .app-content {
+    flex-direction: column;
+  }
+  .editor {
+    overflow: unset;
+    width: 100vw;
+  }
+  .preview {
+    overflow: unset;
+    width: 100vw;
+  }
+}

@@ -1,0 +1,250 @@
+#preview {
+  padding: 0 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial,
+    PingFang SC, Hiragino Sans GB, STHeiti, Microsoft YaHei, Microsoft JhengHei,
+    Source Han Sans SC, Noto Sans CJK SC, Source Han Sans CN, Noto Sans SC,
+    Source Han Sans TC, Noto Sans CJK TC, WenQuanYi Micro Hei, SimSun,
+    sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+#preview blockquote {
+  border-left: 3px solid var(--text-color);
+  color: var(--text-color);
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+#preview > p > code {
+  color: var(--inline-code-text);
+  background-color: var(--inline-code-bg);
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+}
+
+#preview code {
+  color: var(--bg-color);
+  font-size: 14px;
+}
+
+#preview pre {
+  line-height: 1.4;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  padding: 1.2rem 1.25rem;
+  margin: 0.85rem 0;
+  background-color: #282c34;
+  border-radius: 6px;
+  overflow: auto;
+  color: #ccc;
+  background: none;
+  font-family: "Source Code Pro", Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+    monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.45);
+  position: relative;
+  background-color: #282c34;
+  border-radius: 5px;
+}
+
+#preview p {
+  margin: 25px 0;
+  line-height: 1.7;
+}
+
+#preview a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+#preview strong {
+  font-weight: 600;
+}
+
+#preview em {
+  font-style: italic;
+}
+
+#preview h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+#preview h1 {
+  font-size: 50px;
+  padding: 1rem 0;
+}
+
+#preview h2 {
+  font-size: 30px;
+}
+
+#preview h3 {
+  font-size: 30px;
+}
+
+#preview h4 {
+  font-size: 30px;
+}
+
+#preview h5 {
+  font-size: 30px;
+}
+
+#preview h6 {
+  font-size: 30px;
+}
+
+#preview blockquote {
+  font-size: 0.9rem;
+  color: #999;
+  border-left: 0.25rem solid #999;
+  background-color: var(--code-color);
+  margin: 0.5rem 0;
+  padding: 0.25rem 0 0.25rem 1rem;
+}
+
+#preview table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  display: block;
+  overflow-x: auto;
+}
+
+#preview tr {
+  border-top: 1px solid var(--border-color);
+}
+
+#preview tr:nth-child(2n) {
+  background-color: var(--code-color);
+}
+
+#preview td,
+th {
+  border: 1px solid var(--border-color);
+  padding: 0.6em 1em;
+}
+
+#preview th {
+  font-weight: bold;
+}
+
+#preview img {
+  max-width: 100%;
+  display: block;
+  margin: 1.5em auto 1.6em;
+}
+
+#preview ul,
+ol {
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+#preview ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+#preview ol {
+  list-style-type: decimal;
+  padding-left: 40px;
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #7d8391;
+}
+
+.token.punctuation {
+  color: #ccc;
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+  color: #e67b70;
+}
+
+.token.function-name {
+  color: #87befd;
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+  color: #fec28c;
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+  color: #fee89c;
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+  color: #dd85f8;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+  color: #a2ce83;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+  color: #56b6c2;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.inserted {
+  color: green;
+}
