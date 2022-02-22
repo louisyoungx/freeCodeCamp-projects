@@ -2,8 +2,8 @@ import React from 'react'
 import './App.css'
 import './preview.css'
 import { content } from './content'
-import { marked } from 'marked'
-import Prism from 'prismjs'
+import { Editor } from './component/editor'
+import { Preview } from './component/preview'
 
 class App extends React.Component {
   constructor(props) {
@@ -75,54 +75,6 @@ class App extends React.Component {
       </div>
     )
   }
-}
-
-const Editor = (props) => {
-  return (
-    <div className='eidtor'>
-      <textarea id='editor'></textarea>
-    </div>
-  )
-}
-
-const Preview = (props) => {
-  marked.setOptions({
-    breaks: true,
-    highlight: function (code) {
-      return Prism.highlight(code, Prism.languages.javascript, 'javascript')
-    }
-  })
-  let renderer = new marked.Renderer()
-  renderer.link = (href, title, text) => {
-    return `<a target="_blank" href="${href}">${text}</a>`
-  }
-  renderer.heading = (text, level) => {
-    if (level === 2) {
-      return `
-      <h${level} id="${text}">
-        <a name="class="header-anchor" href="#${text}">
-          #
-        </a>
-        ${text}
-      </h${level}>`
-    } else {
-      return `
-      <h${level} id="${text}">
-        ${text}
-      </h${level}>`
-    }
-  }
-
-  return (
-    <div className='preview'>
-      <div
-        id='preview'
-        dangerouslySetInnerHTML={{
-          __html: marked(props.content, { renderer: renderer })
-        }}
-      ></div>
-    </div>
-  )
 }
 
 export default App
